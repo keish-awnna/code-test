@@ -1,7 +1,17 @@
 .top-navbar {
   background-color: $theme-two;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
 
 .bottom-navbar {
   background-color: $theme-one;
+  position: fixed;
+  top: 25px;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
 }
