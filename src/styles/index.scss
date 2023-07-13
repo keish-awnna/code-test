@@ -1,3 +1,9 @@
-.App {
-  background-color: red;
-}
+@import "bootstrap";
+// atoms
+@import "./atoms/fonts";
+@import "./atoms/mixins";
+@import "./atoms/variables";
+@import "./atoms/base";
+
+// molecule
+@import "./molecules/layout/nav-bar.scss";
