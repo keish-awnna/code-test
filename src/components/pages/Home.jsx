@@ -1,10 +1,14 @@
 import React from "react";
-import NavBar from "../ui/molecules/layout/NavBar";
+import Hero from "../ui/molecules/Hero";
+import Jumbotron from "../ui/molecules/Jumbotron";
+import NavBar from "../ui/molecules/NavBar";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
+      <Jumbotron />
+      <Hero />
     </div>
   );
 };

@@ -1,0 +1,14 @@
+.hero-content-wrapper {
+  height: 50vh;
+
+  .hero-content-left {
+    background-color: $theme-three;
+    height: 100%;
+    width: 100%;
+  }
+  .hero-content-right {
+    background-color: $theme-one;
+    height: 100%;
+    width: 100%;
+  }
+}
