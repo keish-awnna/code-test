@@ -7,6 +7,7 @@ import Hero from "../ui/molecules/Hero";
 import HeroCarousel from "../ui/molecules/HeroCarousel";
 import Jumbotron from "../ui/molecules/Jumbotron";
 import NavBar from "../ui/molecules/NavBar";
+import Footer from "../ui/molecules/Footer";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <Gallery />
       <BottomHero />
       <Contact />
+      <Footer />
     </div>
   );
 };
