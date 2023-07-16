@@ -1,8 +1,8 @@
 import React, { useEffect, useState, useRef } from "react";
 
 const initialState = {
-  sticky: "",
-  topNavHeight: 0,
+  animatedHeader: "",
+  navHeight: 0,
   isOpen: false,
   true: false,
   clicked: "0",
@@ -12,21 +12,19 @@ const NavBar = () => {
   const [state, setState] = useState(initialState);
   const [active, setActive] = useState(null);
 
-  const topNavRef = useRef(null);
+  const navRef = useRef(null);
 
   const handleScroll = () => {
-    if (topNavRef.current) {
+    if (navRef.current) {
       if (state.isOpen) {
         return;
       }
       const scrollTop = window.scrollY;
 
-      if (scrollTop > 40 && !state.sticky.length) {
-        setState({ ...state, sticky: "is-sticky" });
-      }
-
-      if (scrollTop + 40 <= 40 && state.sticky.length) {
-        setState({ ...state, sticky: "" });
+      if (window.scrollY > 50) {
+        setState({ ...state, animatedHeader: "animated-header" });
+      } else {
+        setState({ ...state, animatedHeader: "" });
       }
     }
   };
@@ -44,8 +42,8 @@ const NavBar = () => {
   }, [state.isOpen]);
 
   useEffect(() => {
-    if (topNavRef.current) {
-      setState({ ...state, topNavHeight: topNavRef.current.offsetHeight });
+    if (navRef.current) {
+      setState({ ...state, navHeight: navRef.current.offsetHeight });
     }
 
     window.addEventListener("scroll", handleScroll, { passive: true });
@@ -53,7 +51,7 @@ const NavBar = () => {
       window.removeEventListener("scroll", handleScroll);
     };
     console.log("isOpen", state.isOpen);
-  }, [state.sticky, topNavRef, state.isOpen]);
+  }, [state.animatedHeader, navRef, state.isOpen]);
 
   const handleToggle = (index) => {
     if (active === index) {
@@ -63,21 +61,71 @@ const NavBar = () => {
     }
   };
   return (
-    <nav className={`navigation-wrapper ${state.sticky}`}>
-      <div className="top-navbar" ref={topNavRef}>
+    <nav className="navigation-wrapper">
+      <div className={`navbar ${state.animatedHeader}`} ref={navRef}>
         <div className="container">
-          <div className="row">
-            <div className="col">top nav</div>
+          <div className="navbar-content-wrapper">
+            <div className="row">
+              <div className="col-lg-6 col-md-6 col-sm-6">
+                <div className="left-side-content">Chancellor Apartments</div>
+              </div>
+              <div className="col-lg-6 col-md-6 col-sm-6">
+                <div className="right-side-content">
+                  {/* <p className="right-title">Schedule a Tour</p> */}
+                  <button
+                    onClick={() =>
+                      setState({ ...state, isOpen: !state.isOpen })
+                    }
+                    id="nav-icon"
+                    className={`hamburger-menu ${
+                      state.isOpen ? "open" : "close"
+                    }`}
+                  >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </button>
+                  <div className={`panel ${state.isOpen ? "open" : "close"}`}>
+                    <div className="container">
+                      <div className="row">
+                        <div className="col-lg-6 col-sm-12">
+                          <div className="nav-column-one">
+                            <ul>
+                              <li className="nav-links">
+                                <a href="url">Apply Now</a>
+                              </li>
+                              <li className="nav-links">
+                                <a href="url">Schedule a Tour</a>
+                              </li>
+                              <li className="nav-links">
+                                <a href="url">Gallery</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div className="col-lg-6 col-sm-12">
+                          {" "}
+                          <div className="nav-column-two">
+                            <li className="nav-links">
+                              <a href="url">Floor Plans</a>
+                            </li>
+                            <li className="nav-links">
+                              <a href="url">Features</a>
+                            </li>
+                            <li className="nav-links">
+                              <a href="url">Amenities</a>
+                            </li>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      {/* <div className="bottom-navbar">
-        <div className="container">
-          <div className="row">
-            <div className="col">bottom nav</div>
-          </div>
-        </div>
-      </div> */}
     </nav>
   );
 };
