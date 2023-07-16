@@ -1,10 +1,36 @@
+.is-sticky {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background-color: #ffffff;
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+  align-self: stretch;
+
+  .top-navbar {
+    height: 0px;
+  }
+}
+// position: fixed;
+// top: 0;
+// left: 0;
+// right: 0;
+// height: 180px;
+// padding-top: 16px;
+// background: #474645;
+// transition: background 0.5s ease 0s, padding-top 0.5s ease 0s, height 0.5s ease 0s;
+// z-index: 100;
 .top-navbar {
   background-color: $theme-two;
   position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
+  // top: 0;
+  // left: 0;
+  // z-index: 9999;
   width: 100%;
+  background-color: #434242;
+  color: #fff;
+  transition: 1s ease-in-out;
 }
 
 .bottom-navbar {
