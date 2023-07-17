@@ -23,7 +23,7 @@ const FeatureCards = () => {
               <div className="feature-img-right">
                 <img
                   src={Amenities}
-                  className="rounded"
+                  className="rounded feat-img"
                   alt="Unparalleled Amenities"
                 />
               </div>
@@ -34,7 +34,7 @@ const FeatureCards = () => {
               <div className="feature-img-left">
                 <img
                   src={Tailored}
-                  className="rounded"
+                  className="rounded feat-img"
                   alt="Tailored to Perfection"
                 />
               </div>
@@ -67,7 +67,7 @@ const FeatureCards = () => {
               <div className="feature-img-right">
                 <img
                   src={Gateway}
-                  className="rounded"
+                  className="rounded feat-img"
                   alt="Gateway to San Francisco"
                 />
               </div>

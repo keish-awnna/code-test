@@ -18,13 +18,7 @@ const Explore = () => {
             </div>
           </div>
           <div className="col-lg-6 col-sm-12">
-            <div className="hero-content-right">
-              {/* <img
-                  src={Chancellor}
-                  className="rounded"
-                  alt="Chancellor Apartments"
-                /> */}
-            </div>
+            <div className="hero-content-right"></div>
           </div>
         </div>
       </div>

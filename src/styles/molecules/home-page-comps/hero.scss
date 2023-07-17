@@ -24,8 +24,12 @@
     min-height: 700px;
     @include default-bg-img;
     background-image: url("../../../assets/Chancellor-Hotel-j-Union-Square-San-Francisco.png");
-    .apt-image {
-      max-height: 700px;
+  }
+}
+@media (max-width: 36rem) {
+  .hero-content-wrapper {
+    .hero-content-right {
+      min-height: 400px;
     }
   }
 }

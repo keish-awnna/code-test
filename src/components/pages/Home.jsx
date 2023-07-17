@@ -15,15 +15,14 @@ const Home = () => {
     <div>
       <NavBar />
       <Jumbotron />
-      {/* 
+
       <Hero />
       <HeroCarousel />
       <FeatureCards />
-      <Gallery />
       <BottomHero />
       <Directions />
       <TopCarousel />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 };

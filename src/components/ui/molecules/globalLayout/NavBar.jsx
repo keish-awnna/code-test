@@ -66,10 +66,10 @@ const NavBar = () => {
         <div className="container">
           <div className="navbar-content-wrapper">
             <div className="row">
-              <div className="col-lg-8 col-md-8 col-xs-8">
+              <div className="col-8 col-sm-6">
                 <div className="left-side-content">Chancellor</div>
               </div>
-              <div className="col-lg-4 col-md-4 col-xs-4">
+              <div className="col-4 col-sm-6">
                 <div className="right-side-content">
                   <button
                     onClick={() =>

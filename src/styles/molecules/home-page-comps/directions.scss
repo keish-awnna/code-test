@@ -1,23 +1,43 @@
 .directions-wrapper {
   height: 100%;
   padding: 2rem 0rem;
-}
-.directions-info {
-  @include center-content;
-  flex-direction: column;
-  height: 100%;
-  .directions-title {
-    font-size: 2.75rem;
-    color: $font-color-one;
-    text-align: center;
-    letter-spacing: 0.125rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 200;
+
+  .directions-info {
+    @include center-content;
+    flex-direction: column;
+    height: 100%;
+    .directions-title {
+      font-size: 2.75rem;
+      color: $font-color-one;
+      text-align: center;
+      letter-spacing: 0.125rem;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+    }
+  }
+  .directions-image-wrapper {
+    @include center-content;
+  }
+  .directions-image {
+    max-height: 43.75rem;
   }
 }
-.directions-image-wrapper {
-  @include center-content;
-}
-.directions-image {
-  max-height: 700px;
+@media (max-width: 36rem) {
+  .directions-wrapper {
+    height: 100%;
+    padding: 2rem 0rem;
+
+    .directions-info {
+      padding-bottom: 1rem;
+      .directions-title {
+        font-size: 2.5rem;
+      }
+    }
+    .directions-image-wrapper {
+      @include center-content;
+    }
+    .directions-image {
+      max-height: 28.125rem;
+    }
+  }
 }
