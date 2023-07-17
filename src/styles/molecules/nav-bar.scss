@@ -6,7 +6,7 @@
   z-index: 100;
   width: 100%;
   background-color: transparent;
-  color: #434242;
+  color: $white-bg-four;
   height: 11.25rem;
   transition: 0.5s ease-in-out;
 }
@@ -23,6 +23,10 @@
   justify-content: flex-start;
   align-items: center;
   width: 100%;
+  color: $white-bg-four;
+  font-family: "Julius Sans One", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
 }
 .right-side-content {
   display: flex;

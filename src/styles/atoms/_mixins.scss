@@ -14,3 +14,8 @@
   padding: 0;
   list-style: none;
 }
+@mixin default-bg-img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}

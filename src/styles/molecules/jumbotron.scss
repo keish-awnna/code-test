@@ -1,6 +1,50 @@
 .jumbotron {
-  // background-color: $theme-four;
   height: 100vh;
+  @include default-bg-img;
+  background-image: url("../../assets/apt-jumbotron-min.png");
+  animation: zoom-in-zoom-out 10s ease 0.1s;
 }
+// .gradient-overlay {
+//   @include default-bg-img;
+//   background-image: linear-gradient(
+//     to top,
+//     rgba(255, 0, 0, 0),
+//     rgba(125, 116, 99, 1)
+//   );
+//   height: 100%;
+// }
 .jumbo-content-wrapper {
+  height: 100%;
+  .tag-line-content {
+    @include center-content;
+    flex-direction: column;
+    height: 100%;
+
+    h3 {
+      color: $white-bg-four;
+      font-family: "Poppins", sans-serif;
+      font-weight: 100;
+    }
+    h1 {
+      color: $white-bg-four;
+      // font-family: "Banery";
+      font-family: "Julius Sans One", sans-serif;
+    }
+  }
+
+  .call-to-action {
+    background-color: rgba(207, 10, 10, 0.8);
+    width: 50%;
+  }
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
 }

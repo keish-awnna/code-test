@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Julius+Sans+One&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+// font-family: 'Julius Sans One', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+@font-face {
+  font-family: "Kamerun";
+  src: url("./kamerun-modern-logo-serif/Kamerun.woff") format("woff"),
+    url("./kamerun-modern-logo-serif/Kamerun.woff2") format("woff2"),
+    /* Modern Browsers */ url("./kamerun-modern-logo-serif/Kamerun.otf")
+      format("opentype"),
+    /* Safari, Android, iOS */ url("./kamerun-modern-logo-serif/Kamerun.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+@font-face {
+  font-family: "Banery";
+  src: url("./banery-modern-serif/Banery.otf") format("opentype"),
+    /* Modern Browsers */ url("./banery-modern-serif/Banery.ttf")
+      format("truetype");
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
