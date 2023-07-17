@@ -1,4 +1,6 @@
 import "./styles/index.scss";
+import "bootstrap/dist/js/bootstrap.bundle";
+// import "bootstrap/dist/css/bootstrap.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./components/pages/Home";
 
