@@ -1,7 +1,7 @@
 .jumbotron {
   height: 100vh;
   @include default-bg-img;
-  background-image: url("../../../assets/lobby.jpg");
+  background-image: url("../../../assets/lobby.png");
   animation: zoom-in-zoom-out 10s ease 0.1s;
 }
 .jumbo-content-wrapper {

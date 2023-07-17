@@ -8,18 +8,21 @@ import HeroCarousel from "../ui/molecules/homePageComps/HeroCarousel";
 import Jumbotron from "../ui/molecules/homePageComps/Jumbotron";
 import NavBar from "../ui/molecules/globalLayout/NavBar";
 import Footer from "../ui/molecules/globalLayout/Footer";
+import TopCarousel from "../ui/molecules/homePageComps/TopCarousel";
 
 const Home = () => {
   return (
     <div>
       <NavBar />
       <Jumbotron />
+
       <Hero />
       <HeroCarousel />
       <FeatureCards />
       <Gallery />
       <BottomHero />
       <Contact />
+      <TopCarousel />
       <Footer />
     </div>
   );
