@@ -2,18 +2,19 @@
   padding: 2rem 0rem;
 
   .feature-content {
+    @include center-content;
     padding: 2rem 0rem;
-    display: flex;
     flex-direction: row;
 
     .feature-title {
       writing-mode: vertical-rl;
       text-orientation: mixed;
       font-family: "Julius Sans One", sans-serif;
-      letter-spacing: 2px;
+      letter-spacing: 0.125rem;
     }
     .left {
       padding-right: 1rem;
+      text-align: right;
     }
     .right {
       padding-left: 1rem;

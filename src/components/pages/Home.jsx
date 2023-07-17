@@ -1,6 +1,6 @@
 import React from "react";
 import BottomHero from "../ui/molecules/homePageComps/BottomHero";
-import Contact from "../ui/molecules/homePageComps/Contact";
+import Directions from "../ui/molecules/homePageComps/Directions";
 import FeatureCards from "../ui/molecules/homePageComps/FeatureCards";
 import Gallery from "../ui/molecules/homePageComps/Gallery";
 import Hero from "../ui/molecules/homePageComps/Hero";
@@ -21,7 +21,7 @@ const Home = () => {
       <FeatureCards />
       <Gallery />
       <BottomHero />
-      <Contact />
+      <Directions />
       <TopCarousel />
       <Footer />
     </div>

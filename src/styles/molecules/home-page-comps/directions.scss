@@ -1,0 +1,23 @@
+.directions-wrapper {
+  height: 100%;
+  padding: 2rem 0rem;
+}
+.directions-info {
+  @include center-content;
+  flex-direction: column;
+  height: 100%;
+  .directions-title {
+    font-size: 2.75rem;
+    color: $font-color-one;
+    text-align: center;
+    letter-spacing: 0.125rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+  }
+}
+.directions-image-wrapper {
+  @include center-content;
+}
+.directions-image {
+  max-height: 700px;
+}

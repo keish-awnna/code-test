@@ -8,15 +8,15 @@ const FeatureCards = () => {
     <section className="feature-cards-wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-12">
-            <div className="feature-content feat-one">
+          <div className="col-md-12">
+            <div className="feature-content">
               <h3 className="feature-title left">Unparalleled Amenities</h3>
               <div className="feature-description-wrapper">
-                <p className="feature-description-left">
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Minus distinctio quisquam ut omnis perferendis aliquam rerum,
-                  sed inventore cumque reprehenderit. Alias accusamus eveniet
-                  illo amet!
+                <p className="feature-description left">
+                  Indulge in a life of unparalleled luxury and sophistication at
+                  Chancellor Apartments. With our exceptional amenities and
+                  elegant residences, your lifestyle will be elevated to new
+                  heights of comfort and refinement.
                 </p>
                 <button className="cta-btn">Amenities</button>
               </div>
@@ -29,8 +29,8 @@ const FeatureCards = () => {
               </div>
             </div>
           </div>
-          <div className="col-12">
-            <div className="feature-content feat-two">
+          <div className="col-md-12">
+            <div className="feature-content">
               <div className="feature-img-left">
                 <img
                   src={Tailored}
@@ -40,24 +40,26 @@ const FeatureCards = () => {
               </div>
               <div className="feature-description-wrapper right">
                 <p className="feature-description-right">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic
-                  veniam culpa aperiam autem nemo debitis laudantium deserunt
-                  soluta amet quasi voluptate sequi, quidem doloremque dolorem.
+                  Chancellor Apartments offers spacious floor plans thoughtfully
+                  designed to meet the needs of new families and young
+                  professionals. Experience the perfect balance of functionality
+                  and style, tailored to accommodate your evolving lifestyle
+                  with ease and elegance.
                 </p>
                 <button className="cta-btn">Floor Plans</button>
               </div>
               <h3 className="feature-title right">Tailored to Perfection</h3>
             </div>
           </div>
-          <div className="col-12">
-            <div className="feature-content feat-two">
+          <div className="col-md-12">
+            <div className="feature-content">
               <h3 className="feature-title left">Gateway to San Francisco</h3>
               <div className="feature-description-wrapper">
-                <p className="feature-description-left">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-                  et aperiam mollitia voluptatum pariatur omnis rerum,
-                  blanditiis deserunt enim, porro magnam laboriosam illo
-                  ratione.
+                <p className="feature-description left">
+                  As the gateway to San Francisco, Chancellor Apartments not
+                  only grants you easy access to the city's charms but also puts
+                  you within reach of invigorating hikes and thrilling bike
+                  rides for an active and adventurous lifestyle.
                 </p>
 
                 <button className="cta-btn">Schedule A Tour</button>
