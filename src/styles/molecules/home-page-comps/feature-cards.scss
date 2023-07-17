@@ -7,6 +7,8 @@
     flex-direction: row;
     .feature-description-wrapper {
     }
+    .feature-img-left {
+    }
     .feature-title {
       writing-mode: vertical-rl;
       text-orientation: mixed;
@@ -32,6 +34,9 @@
       padding: 1rem 0rem;
       .feature-description-wrapper {
         padding-bottom: 1rem;
+      }
+      .feature-img-left {
+        order: 2;
       }
       .feature-title {
         writing-mode: unset;
