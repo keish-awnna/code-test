@@ -71,7 +71,6 @@ const NavBar = () => {
               </div>
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <div className="right-side-content">
-                  {/* <p className="right-title">Schedule a Tour</p> */}
                   <button
                     onClick={() =>
                       setState({ ...state, isOpen: !state.isOpen })

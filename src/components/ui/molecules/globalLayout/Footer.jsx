@@ -7,29 +7,31 @@ const Footer = () => {
         <div className="container">
           <div className="row">
             <div className="col-sm-12 col-md-4">
-              <div className="footer-col-one">column one</div>
+              <div className="footer-col-one">
+                <h4 className="footer-logo">Chancellor</h4>
+              </div>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div className="footer-col-two">column two</div>
+              <div className="footer-col-two">
+                <p className="contact-info">1234 Market Street</p>
+                <p className="contact-info">San Francisco, CA</p>
+                <p className="contact-info">888-555-7777</p>
+              </div>
             </div>
             <div className="col-sm-12 col-md-4">
-              <div className="footer-col-three">column three</div>
+              <div className="footer-col-three">
+                <div className="lease-link-box">
+                  <button className="cta-btn">Lease Now</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
       <div className="bottom-footer-content">
-        <div className="container">
-          <div className="row">
-            <div className="col-sm-12 col-md-4">
-              <div className="bottom-footer-col-one">bottom column one</div>
-            </div>
-            <div className="col-sm-12 col-md-4">
-              <div className="bottom-footer-col-two">bottom column two</div>
-            </div>
-            <div className="col-sm-12 col-md-4">
-              <div className="bottom-footer-col-three">bottom column three</div>
-            </div>
+        <div className="row">
+          <div className="col-md-12">
+            <div className="bottom-footer-col-one">&copy; 2023</div>
           </div>
         </div>
       </div>
