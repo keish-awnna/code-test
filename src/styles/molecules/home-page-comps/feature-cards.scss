@@ -1,3 +1,22 @@
 .feature-cards-wrapper {
   padding: 2rem 0rem;
+
+  .feature-content {
+    padding: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+
+    .feature-title {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-family: "Julius Sans One", sans-serif;
+      letter-spacing: 2px;
+    }
+    .left {
+      padding-right: 1rem;
+    }
+    .right {
+      padding-left: 1rem;
+    }
+  }
 }
