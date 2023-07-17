@@ -2,7 +2,7 @@
   height: 100%;
   margin-bottom: 2rem;
   .hero-content-left {
-    background-color: $theme-three;
+    // background-color: $theme-three;
     height: 100%;
     width: 100%;
   }
@@ -10,5 +10,7 @@
     background-color: $theme-one;
     height: 100%;
     width: 100%;
+    @include default-bg-img;
+    background-image: url("../../assets/Chancellor-Hotel-j-Union-Square-San-Francisco.png");
   }
 }

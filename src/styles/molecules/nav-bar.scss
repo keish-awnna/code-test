@@ -1,5 +1,5 @@
 .navbar {
-  background-color: $theme-two;
+  // background-color: $theme-two;
   position: fixed;
   top: 0;
   left: 0;
@@ -14,7 +14,7 @@
   width: 100%;
 }
 .animated-header {
-  background-color: #434242;
+  background-color: rgb(124, 157, 150);
   height: 5.625rem;
   color: #fff;
 }
@@ -92,7 +92,7 @@
   left: 0rem;
 }
 .panel {
-  background-color: rgba(67, 66, 66, 0.85);
+  background-color: rgba(124, 157, 150, 0.85);
   position: fixed;
   z-index: 99;
   height: auto;

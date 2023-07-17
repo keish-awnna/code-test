@@ -2,3 +2,6 @@
   @include reset-format;
   @include reset-list;
 }
+body {
+  background-color: $second-red-one;
+}

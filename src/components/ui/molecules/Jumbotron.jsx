@@ -8,8 +8,8 @@ const Jumbotron = () => {
           <h3 className="tag-line">
             Experience the Best of San Francisco Living at
           </h3>
-          <h1 className="display-4">Chancellor Apartments</h1>
-          {/* <h3 className="lead">in San Francisco</h3> */}
+          <h1 className="display-4">Chancellor</h1>
+          <h3 className="lead">Luxury Apartment Homes</h3>
         </div>
         {/* <div className="call-to-action">
           <h3 className="cta-title">View Floor Plans</h3>
