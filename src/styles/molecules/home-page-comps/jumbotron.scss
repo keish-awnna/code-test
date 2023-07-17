@@ -1,0 +1,57 @@
+.jumbotron {
+  height: 100vh;
+  @include default-bg-img;
+  background-image: url("../../../assets/lobby.jpg");
+  animation: zoom-in-zoom-out 10s ease 0.1s;
+}
+.jumbo-content-wrapper {
+  height: 100%;
+  .tag-line-content {
+    @include center-content;
+    flex-direction: column;
+
+    height: 100%;
+
+    .tag-line {
+      color: $white-bg-four;
+      font-family: "Poppins", sans-serif;
+      font-weight: 200;
+    }
+    .main-header {
+      color: $white-bg-four;
+      // font-family: "Banery";
+      font-family: "Julius Sans One", sans-serif;
+      font-size: 8rem;
+      @include center-content;
+      flex-direction: column;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    }
+  }
+
+  .cta-btn {
+    @include center-content;
+    border: none;
+    border-radius: 2px;
+    padding: 5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    background-color: #e9b384;
+    color: $font-color-two;
+  }
+  .cta-btn:hover {
+    transform: translateY(-0.1875rem);
+    box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in;
+  }
+}
+@keyframes zoom-in-zoom-out {
+  0% {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.05, 1.05);
+  }
+  100% {
+    transform: scale(1, 1);
+  }
+}

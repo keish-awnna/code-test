@@ -1,13 +1,13 @@
 import React from "react";
-import BottomHero from "../ui/molecules/BottomHero";
-import Contact from "../ui/molecules/Contact";
-import FeatureCards from "../ui/molecules/FeatureCards";
-import Gallery from "../ui/molecules/Gallery";
-import Hero from "../ui/molecules/Hero";
-import HeroCarousel from "../ui/molecules/HeroCarousel";
-import Jumbotron from "../ui/molecules/Jumbotron";
-import NavBar from "../ui/molecules/NavBar";
-import Footer from "../ui/molecules/Footer";
+import BottomHero from "../ui/molecules/homePageComps/BottomHero";
+import Contact from "../ui/molecules/homePageComps/Contact";
+import FeatureCards from "../ui/molecules/homePageComps/FeatureCards";
+import Gallery from "../ui/molecules/homePageComps/Gallery";
+import Hero from "../ui/molecules/homePageComps/Hero";
+import HeroCarousel from "../ui/molecules/homePageComps/HeroCarousel";
+import Jumbotron from "../ui/molecules/homePageComps/Jumbotron";
+import NavBar from "../ui/molecules/globalLayout/NavBar";
+import Footer from "../ui/molecules/globalLayout/Footer";
 
 const Home = () => {
   return (

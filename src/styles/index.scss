@@ -7,12 +7,12 @@
 @import "./atoms/animations";
 
 // molecule
-@import "./molecules/nav-bar.scss";
-@import "./molecules/jumbotron.scss";
-@import "./molecules/hero.scss";
-@import "./molecules/carousel.scss";
-@import "./molecules/feature-cards.scss";
-@import "./molecules/gallery.scss";
-@import "./molecules/contact.scss";
-@import "./molecules/bottom-hero.scss";
-@import "./molecules/footer.scss";
+@import "./molecules/home-page-comps/jumbotron.scss";
+@import "./molecules/home-page-comps/hero.scss";
+@import "./molecules/home-page-comps/carousel.scss";
+@import "./molecules/home-page-comps/feature-cards.scss";
+@import "./molecules/home-page-comps/gallery.scss";
+@import "./molecules/home-page-comps/contact.scss";
+@import "./molecules/home-page-comps/bottom-hero.scss";
+@import "./molecules/global-layout/nav-bar.scss";
+@import "./molecules/global-layout/footer.scss";
