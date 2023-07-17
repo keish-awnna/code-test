@@ -1,6 +1,5 @@
 import React from "react";
 import Bedroom from "../../../../assets/bedroom.png";
-import LeftMyHeart from "../../../../assets/left-my-heart-in-sf.png";
 import Kitchen from "../../../../assets/kitchen.png";
 import RedChair from "../../../../assets/red-chair-living-rm.png";
 import Apartment from "../../../../assets/apartment.jpg";
