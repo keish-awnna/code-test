@@ -21,13 +21,7 @@ const HeroCarousel = () => {
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="10000">
             <img className="d-block w-100" src={Bedroom} alt="First slide" />
-            <div className="carousel-caption d-none d-md-block">
-              <h5>My Caption Title (1st Image)</h5>
-              <p>
-                The whole caption will only show up if the screen is at least
-                medium size.
-              </p>
-            </div>
+            <div className="carousel-caption d-none d-md-block"></div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
             <img className="d-block w-100" src={RedChair} alt="Second slide" />
