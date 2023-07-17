@@ -85,42 +85,37 @@ const NavBar = () => {
                     <span></span>
                     <span></span>
                   </button>
-                  <div className={`panel ${state.isOpen ? "open" : "close"}`}>
-                    <div className="container">
-                      <div className="row">
-                        <div className="col-lg-6 col-sm-12">
-                          <div className="nav-column-one">
-                            <ul>
-                              <li className="nav-links">
-                                <a href="url">Apply Now</a>
-                              </li>
-                              <li className="nav-links">
-                                <a href="url">Schedule a Tour</a>
-                              </li>
-                              <li className="nav-links">
-                                <a href="url">Gallery</a>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                        <div className="col-lg-6 col-sm-12">
-                          {" "}
-                          <div className="nav-column-two">
-                            <li className="nav-links">
-                              <a href="url">Floor Plans</a>
-                            </li>
-                            <li className="nav-links">
-                              <a href="url">Features</a>
-                            </li>
-                            <li className="nav-links">
-                              <a href="url">Amenities</a>
-                            </li>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className={`panel ${state.isOpen ? "open" : "close"}`}>
+        <div className="container">
+          <div className="nav-links-wrapper">
+            <div className="col-lg-12 col-sm-12">
+              <div className="nav-column">
+                <ul>
+                  <li className="nav-links">
+                    <a href="url">Apply Now</a>
+                  </li>
+                  <li className="nav-links">
+                    <a href="url">Schedule a Tour</a>
+                  </li>
+                  <li className="nav-links">
+                    <a href="url">Gallery</a>
+                  </li>
+                  <li className="nav-links">
+                    <a href="url">Floor Plans</a>
+                  </li>
+                  <li className="nav-links">
+                    <a href="url">Features</a>
+                  </li>
+                  <li className="nav-links">
+                    <a href="url">Amenities</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </div>

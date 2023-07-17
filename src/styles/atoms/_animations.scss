@@ -4,12 +4,68 @@
     transform: translateX(10rem);
   }
 
-  //   80% {
-  //     transform: translateX(-1rem);
-  //   }
-
   100% {
     opacity: 1;
     transform: translate(0);
+  }
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 1;
+    transform: translate(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+}
+@-webkit-keyframes openPanel {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@-moz-keyframes openPanel {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes openPanel {
+  from {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes closePanel {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@-moz-keyframes closePanel {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
+  }
+}
+@keyframes closePanel {
+  from {
+    transform: scaleY(1);
+  }
+  to {
+    transform: scaleY(0);
   }
 }
