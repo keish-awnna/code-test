@@ -15,7 +15,7 @@ const Home = () => {
     <div>
       <NavBar />
       <Jumbotron />
-
+      {/* 
       <Hero />
       <HeroCarousel />
       <FeatureCards />
@@ -23,7 +23,7 @@ const Home = () => {
       <BottomHero />
       <Directions />
       <TopCarousel />
-      <Footer />
+      <Footer /> */}
     </div>
   );
 };

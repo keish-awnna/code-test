@@ -3,28 +3,28 @@
   @include default-bg-img;
   background-image: url("../../../assets/lobby.png");
   animation: zoom-in-zoom-out 10s ease 0.1s;
-}
-.jumbo-content-wrapper {
-  height: 100%;
-  .tag-line-content {
-    @include center-content;
-    flex-direction: column;
 
+  .jumbo-content-wrapper {
     height: 100%;
-
-    .tag-line {
-      color: $white-bg-four;
-      font-family: "Poppins", sans-serif;
-      font-weight: 200;
-    }
-    .main-header {
-      color: $white-bg-four;
-      // font-family: "Banery";
-      font-family: "Julius Sans One", sans-serif;
-      font-size: 8rem;
+    .tag-line-content {
       @include center-content;
       flex-direction: column;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      height: 100%;
+
+      .tag-line {
+        color: $white-bg-four;
+        font-family: "Poppins", sans-serif;
+        font-weight: 200;
+      }
+      .main-header {
+        color: $white-bg-four;
+        // font-family: "Banery";
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 8rem;
+        @include center-content;
+        flex-direction: column;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+      }
     }
   }
 }
@@ -37,5 +37,20 @@
   }
   100% {
     transform: scale(1, 1);
+  }
+}
+
+@media (max-width: 62rem) {
+  .jumbotron {
+    .jumbo-content-wrapper {
+      .tag-line-content {
+        .tag-line {
+          text-align: center;
+        }
+        .main-header {
+          font-size: 3rem;
+        }
+      }
+    }
   }
 }
