@@ -9,12 +9,29 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll";
 function App() {
   const scrollRef = useRef(null);
 
-  useEffect(() => {
-    new LocomotiveScroll({
-      el: scrollRef.current,
+  window.addEventListener("load", () => {
+    const scroll = new LocomotiveScroll({
+      el: document.querySelector("[data-scroll-container]"),
       smooth: true,
+      smoothMobile: true,
+      multiplier: 0.75,
+      scrollFromAnywhere: true,
+      lerp: 0.05,
     });
+    setTimeout(() => {
+      scroll.update();
+    }, 5000);
   });
+
+  // useEffect(() => {
+  //   new LocomotiveScroll({
+  //     el: scrollRef.current,
+  //     smooth: true,
+  //     // smoothMobile: true,
+  //     // resetNativeScroll: true,
+  //     // lerp: 0.05,
+  //   });
+  // });
   return (
     <LocomotiveScrollProvider containerRef={scrollRef}>
       <main data-scroll-container ref={scrollRef}>
