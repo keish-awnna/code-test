@@ -18,7 +18,6 @@
   .jumbo-content-wrapper {
     height: 100%;
     width: 100%;
-
     position: absolute;
     z-index: 10;
     .tag-line-content {
@@ -30,6 +29,7 @@
         color: $white-bg-four;
         font-family: "Poppins", sans-serif;
         font-weight: 200;
+        animation: move-in-right 1s ease 0.1s;
       }
       .main-header {
         color: $white-bg-four;
@@ -38,6 +38,7 @@
         @include center-content;
         flex-direction: column;
         text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.5);
+        animation: move-in-left 1s ease 0.1s;
       }
     }
   }
