@@ -12,9 +12,6 @@ const Jumbotron = () => {
           <h3 className="tag-line">Luxury Apartment Homes</h3>
           <button className="cta-btn">View Floor Plans</button>
         </div>
-        {/* <div className="call-to-action">
-          <button className="cta-btn">View Floor Plans</button>
-        </div> */}
       </div>
     </div>
   );
