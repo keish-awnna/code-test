@@ -113,6 +113,7 @@
     // animation: moveInRight 1s ease-in-out;
     animation: openPanel 1s normal forwards ease-in-out;
     transform-origin: 50% 0%;
+    overflow: auto;
   }
   &.close {
     animation: closePanel 1s normal forwards ease-in-out;

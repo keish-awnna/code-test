@@ -109,9 +109,6 @@ const NavBar = () => {
                     <a href="url">Floor Plans</a>
                   </li>
                   <li className="nav-links">
-                    <a href="url">Features</a>
-                  </li>
-                  <li className="nav-links">
                     <a href="url">Amenities</a>
                   </li>
                 </ul>
