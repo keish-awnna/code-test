@@ -21,7 +21,7 @@
     background-color: $theme-one;
     height: 100%;
     width: 100%;
-    min-height: 700px;
+    min-height: 43.75rem;
     @include default-bg-img;
     background-image: url("../../../assets/Chancellor-Hotel-j-Union-Square-San-Francisco.png");
   }
@@ -29,7 +29,7 @@
 @media (max-width: 36rem) {
   .hero-content-wrapper {
     .hero-content-right {
-      min-height: 400px;
+      min-height: 25rem;
     }
   }
 }

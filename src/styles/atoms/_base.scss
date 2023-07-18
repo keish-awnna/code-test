@@ -3,7 +3,7 @@
   @include reset-list;
 }
 body {
-  background-color: $second-red-one;
+  background-color: $bg-color;
 }
 .cta-btn {
   @include center-content;

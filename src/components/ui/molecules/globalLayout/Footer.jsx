@@ -31,7 +31,9 @@ const Footer = () => {
       <div className="bottom-footer-content">
         <div className="row">
           <div className="col-md-12">
-            <div className="bottom-footer-col-one">&copy; 2023</div>
+            <div className="bottom-footer-col-one">
+              &copy; Gradient Ascent {new Date().getFullYear()}
+            </div>
           </div>
         </div>
       </div>

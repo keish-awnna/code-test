@@ -15,6 +15,7 @@ const Explore = () => {
                 thoughtful amenities for families. Embrace a lifestyle of luxury
                 and community.
               </p>
+              <button className="cta-btn">Lease Now</button>
             </div>
           </div>
           <div className="col-lg-6 col-sm-12">

@@ -23,7 +23,7 @@
         font-size: 8rem;
         @include center-content;
         flex-direction: column;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        text-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.5);
       }
     }
   }

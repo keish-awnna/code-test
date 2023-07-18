@@ -10,21 +10,15 @@
 
   .footer-col-one {
     .footer-logo {
-      color: $main-theme-one;
+      color: $font-color-one;
       font-family: "Julius Sans One", sans-serif;
       font-size: 1.75rem;
-      letter-spacing: 2px;
+      letter-spacing: 0.125rem;
     }
   }
   .footer-col-three {
     @include center-content;
     flex-direction: row;
-
-    // .lease-link-box {
-    //   background-color: #ffb344;
-    //   border-radius: 2px;
-    //   padding: 1rem;
-    // }
   }
 }
 
