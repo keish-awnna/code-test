@@ -11,8 +11,8 @@ const FeatureCards = () => {
           <div className="col-md-12">
             <div className="feature-content">
               <h3 className="feature-title left">Unparalleled Amenities</h3>
-              <div className="feature-description-wrapper">
-                <p className="feature-description left">
+              <div className="feature-description-wrapper left">
+                <p className="feature-description">
                   Indulge in a life of unparalleled luxury and sophistication at
                   Chancellor Apartments. With our exceptional amenities and
                   elegant residences, your lifestyle will be elevated to new
@@ -54,8 +54,8 @@ const FeatureCards = () => {
           <div className="col-md-12">
             <div className="feature-content">
               <h3 className="feature-title left">Gateway to San Francisco</h3>
-              <div className="feature-description-wrapper">
-                <p className="feature-description left">
+              <div className="feature-description-wrapper left">
+                <p className="feature-description ">
                   As the gateway to San Francisco, Chancellor Apartments not
                   only grants you easy access to the city's charms but also puts
                   you within reach of invigorating hikes and thrilling bike
