@@ -11,24 +11,14 @@ body {
   border-radius: 0.125rem;
   padding: 0.3125rem 0.625rem;
   font-family: "Poppins", sans-serif;
-  font-weight: 200;
+  font-weight: 500;
   background-color: #e9b384;
-  color: $font-color-two;
+  color: $font-color-one;
 }
 .cta-btn:hover {
   transform: translateY(-0.1875rem);
   box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
   transition: all 0.2s ease-in;
-}
-
-.hero-overlay {
-  height: 100%;
-  width: 100%;
-  background: linear-gradient(
-    0deg,
-    rgba(124, 157, 150, 0.5) 0%,
-    rgba(233, 179, 132, 0.5) 100%
-  );
 }
 
 p {

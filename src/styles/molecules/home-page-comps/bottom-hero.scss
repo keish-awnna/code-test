@@ -4,18 +4,30 @@
   margin: 2rem 0rem;
   @include default-bg-img;
   background-image: url("../../../assets/woman-on-couch.png");
-
-  .btm-hero-content {
-    @include center-content;
-    flex-direction: column;
+  .hero-overlay {
     height: 100%;
+    width: 100%;
+    background: linear-gradient(
+      0deg,
+      rgba(124, 157, 150, 0.5) 0%,
+      rgba(233, 179, 132, 0.5) 100%
+    );
 
-    .btm-hero-title {
-      font-size: 2.75rem;
-      font-family: "Poppins", sans-serif;
-      color: $white-bg-four;
-      text-align: center;
-      font-weight: 200;
+    .container {
+      height: 100%;
+    }
+    .btm-hero-content {
+      @include center-content;
+      flex-direction: column;
+      height: 100%;
+
+      .btm-hero-title {
+        font-size: 2.75rem;
+        font-family: "Poppins", sans-serif;
+        color: $white-bg-four;
+        text-align: center;
+        font-weight: 200;
+      }
     }
   }
 }

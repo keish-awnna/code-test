@@ -3,6 +3,7 @@
   @include default-bg-img;
   background-image: url("../../../assets/lobby.png");
   animation: zoom-in-zoom-out 10s ease 0.1s;
+  overflow: hidden;
 
   .jumbo-content-wrapper {
     height: 100%;
