@@ -2,19 +2,25 @@ import React from "react";
 import Trolly from "../../../../assets/trolly-carousel.png";
 import Bike from "../../../../assets/bike-top-carousel.png";
 import LeftMyHeart from "../../../../assets/left-my-heart-in-sf.png";
+import EatingDinner from "../../../../assets/eating-dinner.png";
 
-const TopCarousel = () => {
+const BottomCarousel = () => {
   return (
     <section className="carousel-wrapper">
-      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselIndicators"
+        className="carousel slide"
+        data-ride="carousel"
+      >
         <ol className="carousel-indicators">
           <li
             data-target="#carouselIndicators"
             data-slide-to="0"
-            class="active"
+            className="active"
           ></li>
           <li data-target="#carouselIndicators" data-slide-to="1"></li>
           <li data-target="#carouselIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselIndicators" data-slide-to="3"></li>
         </ol>
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="10000">
@@ -28,6 +34,13 @@ const TopCarousel = () => {
               className="d-block w-100"
               src={LeftMyHeart}
               alt="Third slide"
+            />
+          </div>
+          <div className="carousel-item">
+            <img
+              className="d-block w-100"
+              src={EatingDinner}
+              alt="Fourth slide"
             />
           </div>
         </div>
@@ -60,4 +73,4 @@ const TopCarousel = () => {
   );
 };
 
-export default TopCarousel;
+export default BottomCarousel;
