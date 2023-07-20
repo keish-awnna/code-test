@@ -26,13 +26,13 @@ function App() {
         smoothMobile: true,
         multiplier: 0.75,
         scrollFromAnywhere: true,
-        lerp: 0.05,
+        lerp: 0.045,
       });
 
       setScrollManager(scroll);
       setTimeout(() => {
         scroll.update();
-      }, 5000);
+      }, 500);
     });
   }, []);
   return (

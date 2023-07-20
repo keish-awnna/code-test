@@ -35,16 +35,18 @@ const NavBar = (props) => {
     const body = document.getElementsByTagName("body")[0];
     const main = document.getElementById("main-app-wrapper");
     console.log(scrollManager);
-    if (state.isOpen) {
-      body.style.overflowY = "hidden";
+    if (scrollManager) {
+      if (state.isOpen) {
+        body.style.overflowY = "hidden";
 
-      scrollManager.stop();
-      scrollManager.scrollTo(scrollManager.scroll.instance.scroll.y, {
-        duration: 1,
-      });
-    } else {
-      body.style.overflowY = "scroll";
-      console.log(scrollManager);
+        scrollManager.stop();
+        // scrollManager.scrollTo(scrollManager.scroll.instance.scroll.y, {
+        //   duration: 1,
+        // });
+      } else {
+        body.style.overflowY = "scroll";
+        scrollManager.start();
+      }
     }
   }, [state.isOpen]);
 

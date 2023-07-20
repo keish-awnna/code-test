@@ -20,7 +20,7 @@ const Home = () => {
       <FeatureCards />
       <BottomHero />
       <Directions />
-      <BottomCarousel />
+      {/* <BottomCarousel /> */}
       <Footer />
     </div>
   );
