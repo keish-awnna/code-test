@@ -7,12 +7,16 @@ import Apartment from "../../../../assets/apartment.jpg";
 const HeroCarousel = () => {
   return (
     <section className="carousel-wrapper">
-      <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
+      <div
+        id="carouselIndicators"
+        className="carousel slide"
+        data-ride="carousel"
+      >
         <ol className="carousel-indicators">
           <li
             data-target="#carouselIndicators"
             data-slide-to="0"
-            class="active"
+            className="active"
           ></li>
           <li data-target="#carouselIndicators" data-slide-to="1"></li>
           <li data-target="#carouselIndicators" data-slide-to="2"></li>

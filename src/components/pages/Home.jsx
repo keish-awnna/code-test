@@ -2,7 +2,6 @@ import React from "react";
 import BottomHero from "../ui/molecules/homePageComps/BottomHero";
 import Directions from "../ui/molecules/homePageComps/Directions";
 import FeatureCards from "../ui/molecules/homePageComps/FeatureCards";
-import Gallery from "../ui/molecules/homePageComps/Gallery";
 import Hero from "../ui/molecules/homePageComps/Hero";
 import HeroCarousel from "../ui/molecules/homePageComps/HeroCarousel";
 import Jumbotron from "../ui/molecules/homePageComps/Jumbotron";
@@ -21,7 +20,7 @@ const Home = () => {
       <FeatureCards />
       <BottomHero />
       <Directions />
-      {/* <BottomCarousel /> */}
+      <BottomCarousel />
       <Footer />
     </div>
   );

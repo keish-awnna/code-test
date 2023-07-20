@@ -1,4 +1,5 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState, useRef, useContext } from "react";
+import { ScrollContext } from "../../../../App";
 
 const initialState = {
   animatedHeader: "",
@@ -8,9 +9,10 @@ const initialState = {
   clicked: "0",
 };
 
-const NavBar = () => {
+const NavBar = (props) => {
   const [state, setState] = useState(initialState);
   const [active, setActive] = useState(null);
+  const scrollManager = useContext(ScrollContext);
 
   const navRef = useRef(null);
 
@@ -31,13 +33,18 @@ const NavBar = () => {
   useEffect(() => {
     console.log("isOpen", state.isOpen);
     const body = document.getElementsByTagName("body")[0];
-
+    const main = document.getElementById("main-app-wrapper");
+    console.log(scrollManager);
     if (state.isOpen) {
-      console.log(body);
-
       body.style.overflowY = "hidden";
+
+      scrollManager.stop();
+      scrollManager.scrollTo(scrollManager.scroll.instance.scroll.y, {
+        duration: 1,
+      });
     } else {
       body.style.overflowY = "scroll";
+      console.log(scrollManager);
     }
   }, [state.isOpen]);
 
